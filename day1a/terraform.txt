@@ -1,0 +1,162 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 33,
+  "lineage": "b8e897e5-e0d7-2909-dffd-7a8da9452d31",
+  "outputs": {
+    "filenames": {
+      "value": [
+        "./tf0.sh",
+        "./tf1.sh",
+        "./tf2.sh"
+      ],
+      "type": [
+        "tuple",
+        [
+          "string",
+          "string",
+          "string"
+        ]
+      ]
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "file1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "content": "We are learning terraform together",
+            "content_base64": null,
+            "content_base64sha256": "zkVUv9x41bg4OY0m8gD+W1Ro5h/6mbcpwr+RCmfcmxk=",
+            "content_base64sha512": "7iLmPCjCm1Jg7gQn+ZLR20Ne3FMEF4RTDSBUO8bEBM2lgOHd/AhrBZOi4ilmvRZsCYGUCLi4uaZeITUyo+WXhg==",
+            "content_md5": "f5990f366b361461e5b56e88601e6635",
+            "content_sha1": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "content_sha256": "ce4554bfdc78d5b838398d26f200fe5b5468e61ffa99b729c2bf910a67dc9b19",
+            "content_sha512": "ee22e63c28c29b5260ee0427f992d1db435edc53041784530d20543bc6c404cda580e1ddfc086b0593a2e22966bd166c09819408b8b8b9a65e213532a3e59786",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./tf0.sh",
+            "id": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "sensitive_content"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "content": "We are learning terraform together",
+            "content_base64": null,
+            "content_base64sha256": "zkVUv9x41bg4OY0m8gD+W1Ro5h/6mbcpwr+RCmfcmxk=",
+            "content_base64sha512": "7iLmPCjCm1Jg7gQn+ZLR20Ne3FMEF4RTDSBUO8bEBM2lgOHd/AhrBZOi4ilmvRZsCYGUCLi4uaZeITUyo+WXhg==",
+            "content_md5": "f5990f366b361461e5b56e88601e6635",
+            "content_sha1": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "content_sha256": "ce4554bfdc78d5b838398d26f200fe5b5468e61ffa99b729c2bf910a67dc9b19",
+            "content_sha512": "ee22e63c28c29b5260ee0427f992d1db435edc53041784530d20543bc6c404cda580e1ddfc086b0593a2e22966bd166c09819408b8b8b9a65e213532a3e59786",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./tf1.sh",
+            "id": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "sensitive_content"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "content": "We are learning terraform together",
+            "content_base64": null,
+            "content_base64sha256": "zkVUv9x41bg4OY0m8gD+W1Ro5h/6mbcpwr+RCmfcmxk=",
+            "content_base64sha512": "7iLmPCjCm1Jg7gQn+ZLR20Ne3FMEF4RTDSBUO8bEBM2lgOHd/AhrBZOi4ilmvRZsCYGUCLi4uaZeITUyo+WXhg==",
+            "content_md5": "f5990f366b361461e5b56e88601e6635",
+            "content_sha1": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "content_sha256": "ce4554bfdc78d5b838398d26f200fe5b5468e61ffa99b729c2bf910a67dc9b19",
+            "content_sha512": "ee22e63c28c29b5260ee0427f992d1db435edc53041784530d20543bc6c404cda580e1ddfc086b0593a2e22966bd166c09819408b8b8b9a65e213532a3e59786",
+            "directory_permission": "0777",
+            "file_permission": "0777",
+            "filename": "./tf2.sh",
+            "id": "59e4b862b7f410691181ecef256ec5be2a2b9f15",
+            "sensitive_content": null,
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "sensitive_content"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "local_sensitive_file",
+      "name": "file2",
+      "provider": "provider[\"registry.terraform.io/hashicorp/local\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "content": "Terraform secrets",
+            "content_base64": null,
+            "content_base64sha256": "yIzJ02Nww4XUHwxs7FsfgUPTzk/POZvHIwkqCD9Xezo=",
+            "content_base64sha512": "irADFVzIwE3J6L+leWhyNelLmEAXE5Rzz/tjX+MxyjSpB1JfXZ+bOYJuEr0FupWTy4EvQDSO5NBtqyfLMaDr7Q==",
+            "content_md5": "584ccb3bc0202e36ab8d9495581598df",
+            "content_sha1": "1200b7e0041fc29e3ddf7a2c7cd758724398cded",
+            "content_sha256": "c88cc9d36370c385d41f0c6cec5b1f8143d3ce4fcf399bc723092a083f577b3a",
+            "content_sha512": "8ab003155cc8c04dc9e8bfa579687235e94b984017139473cffb635fe331ca34a907525f5d9f9b39826e12bd05ba9593cb812f40348ee4d06dab27cb31a0ebed",
+            "directory_permission": "0700",
+            "file_permission": "0700",
+            "filename": "./secret.md",
+            "id": "1200b7e0041fc29e3ddf7a2c7cd758724398cded",
+            "source": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "content"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "content_base64"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
