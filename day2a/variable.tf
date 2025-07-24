@@ -1,9 +1,9 @@
 variable "tf_access_key" {
-  default = "AKIAVIOZFNMHOWZFV5E7"
+  default = ""
 }
 
 variable "tf_secret_key" {
-  default = "DjQnCCO4V211b8VY5rcmwTbs5zBz+vA4m6+fCyAK"
+  default = ""
 }
 
 variable "tf_region" {
