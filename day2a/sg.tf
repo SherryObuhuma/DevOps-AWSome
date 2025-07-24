@@ -36,6 +36,15 @@ resource "aws_vpc_security_group_ingress_rule" "allow_ssh_ipv4" {
   description       = "SSH from the VPC"
 }
 
+resource "aws_vpc_security_group_ingress_rule" "allow_nodejs_app_ipv4" {
+  security_group_id = aws_security_group.tf_allow_tls_sg.id
+  cidr_ipv4         = var.tf_vpc_cidr_block_rules
+  from_port         = 3000
+  to_port           = 3000
+  ip_protocol       = "tcp"
+  description       = "Nodejs application port"
+}
+
 resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
   security_group_id = aws_security_group.tf_allow_tls_sg.id
   cidr_ipv4         = var.tf_vpc_cidr_block_rules

@@ -1,9 +1,9 @@
 variable "tf_access_key" {
-  default = ""
+  default = "AKIAVIOZFNMHOWZFV5E7"
 }
 
 variable "tf_secret_key" {
-  default = ""
+  default = "DjQnCCO4V211b8VY5rcmwTbs5zBz+vA4m6+fCyAK"
 }
 
 variable "tf_region" {
@@ -32,4 +32,8 @@ variable "tf_ec2_ami" {
 
 variable "tf_ec2_key" {
   default = "test-key-pair"
+}
+
+variable "tf_user_profile" {
+  default = "terraform-test"
 }

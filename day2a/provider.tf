@@ -22,4 +22,5 @@ provider "aws" {
   region     = var.tf_region
   access_key = var.tf_access_key
   secret_key = var.tf_secret_key
+  profile = var.tf_user_profile
 }
