@@ -124,3 +124,51 @@ resource "aws_route_table_association" "dev_private_b" {
   subnet_id      = aws_subnet.dev_private_subnet_2.id
   route_table_id = aws_route_table.dev_private_rt.id
 }
+
+
+#create Security Group dev_SG
+resource "aws_security_group" "dev_SG" {
+  vpc_id      = aws_vpc.dev_vpc.id
+  name        = "dev_SG"
+  description = "Allow http_https_ssh"
+  tags = {
+    "Name" = "dev_SG"
+  }
+}
+
+#allow http,http,ssh from any source (not recommended)
+
+resource "aws_vpc_security_group_ingress_rule" "allow_http_ipv4" {
+  security_group_id = aws_security_group.dev_SG.id
+  ip_protocol       = "tcp"
+  cidr_ipv4         = "0.0.0.0/0"
+  to_port           = 80
+  from_port         = 80
+
+}
+
+resource "aws_vpc_security_group_ingress_rule" "allow_https_ipv4" {
+  security_group_id = aws_security_group.dev_SG.id
+  ip_protocol       = "tcp"
+  cidr_ipv4         = "0.0.0.0/0"
+  from_port         = 443
+  to_port           = 443
+
+}
+
+resource "aws_vpc_security_group_ingress_rule" "allow_ssh_ipv4" {
+  ip_protocol       = "tcp"
+  security_group_id = aws_security_group.dev_SG.id
+  to_port           = 22
+  from_port         = 22
+  cidr_ipv4         = "0.0.0.0/0"
+
+}
+
+
+#allow all outbound traffic
+resource "aws_vpc_security_group_egress_rule" "allow_all_outbound_traffic" {
+  security_group_id = aws_security_group.dev_SG.id
+  ip_protocol       = "-1"
+  cidr_ipv4         = "0.0.0.0/0"
+}
