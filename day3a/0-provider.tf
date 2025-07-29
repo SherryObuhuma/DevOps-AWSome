@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "aws" {
-  region     = var.dev_region
-  access_key = var.dev_access_key
-  secret_key = var.dev_secret_key
-  profile    = var.dev_user_profile
+  region     = var.tf_region
+  access_key = var.tf_access_key
+  secret_key = var.tf_secrete_key
+  profile    = var.tf_profile
 }
