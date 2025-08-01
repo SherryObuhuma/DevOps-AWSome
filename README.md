@@ -36,6 +36,10 @@ Allows inbound:
 
 And allows all outbound traffic.
 
+### ✅ Manifest Files
+- `deployment.yaml` manages pods to run the application
+- `service.yaml` exposes the application running in the cluster
+
 ---
 
 ## 🧪 Prerequisites
